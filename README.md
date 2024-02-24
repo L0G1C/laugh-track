@@ -4,3 +4,4 @@
 
 ## Licenses
 Sounds: https://mixkit.co/license/#sfxFree
+FontAwesome: https://fontawesome.com/license

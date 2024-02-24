@@ -35,7 +35,7 @@ Hooks.on("getSceneControlButtons", function(controls) {
       name: "send-a-laugh",
       title: "Laugh Track",
       button: true,
-      onClick: () => window.game.laughTrack.play()
+      onClick: () => window.game.laughTrack.render(true)
     });
     
   });
