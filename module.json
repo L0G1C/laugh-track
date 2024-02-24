@@ -1,0 +1,38 @@
+{
+    "id": "laugh-track",
+    "title": "Laugh Track",
+    "description": "A simple module to help muted players share their laughter.",
+    "authors": [
+      {
+      "name": "Logicalinsanity",
+      "discord": "logicalinsanity"
+      }
+    ],
+    "relationships": {
+        "requires": [
+          {
+            "id": "socketlib",
+            "type": "module",
+            "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json"
+          }
+        ]
+      },
+    "esmodules": [
+        "./esmodules/main.js"
+    ],
+    "styles": ["styles/styles.css"],
+    "version": "1.0.0",
+    "compatibility": {
+      "minimum": "10",
+      "verified": "11"
+    },
+    "languages": [
+        {
+          "lang": "en",
+          "name": "English",
+          "path": "lang/en.json"
+        }
+    ],
+    "socket": true,
+    "url": "https://github.com/brunocalado/raise-my-hand-plus"
+  }
