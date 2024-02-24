@@ -1,0 +1,16 @@
+{
+    "LAUGHTRACK": {
+        "app": {
+        "title": "Laugh Track",
+        "laughtrack": "laughtrack",
+        "default": "make this default sound?",
+        "send": "Send a laugh."
+        },
+        "settings": {
+            "laughsoundvolume": {
+                "name": "Laugh Track Volume",
+                "hint": "Set the volume for Laugh Track sounds"
+            }
+        }
+    }
+}
