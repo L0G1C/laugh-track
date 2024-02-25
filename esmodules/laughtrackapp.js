@@ -9,7 +9,7 @@ export class LaughTrackApplication extends Application {
                 id: "laughtrack-app",
                 template: "modules/laugh-track/templates/laughtrack.html",
                 width: 300,
-                height: 'auto',
+                height: "auto",
                 resizable: false,
             });
     }

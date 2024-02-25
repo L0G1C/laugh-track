@@ -1,4 +1,4 @@
-const moduleName = 'laugh-track';
+const moduleName = "laugh-track";
 import { registerSettings } from "./settings.js";
 import { LaughTrackApplication } from "./laughtrackapp.js"
 
@@ -48,9 +48,9 @@ export class LaughTrack {
     }
 
     static registerHotKeys() {        
-        game.keybindings.register(moduleName, 'playLaugh', {
-            name: 'Play Laugh',
-            hint: 'Plays the default laugh sound',
+        game.keybindings.register(moduleName, "playLaugh", {
+            name: "Play Laugh",
+            hint: "Plays the default laugh sound",
             editable: [{ key: "KeyL", modifiers: []}],
             onDown: () => {
                 let soundName = setting("defaultsound");
@@ -76,13 +76,13 @@ export class LaughTrack {
     }
 
     static async sendSound(data){
-        log("Playing Sound"); // TODO - Why is this happening twice potentially?
+        log("Playing Sound: " + data.sound); 
         this.playSound(data.sound);
     }
 }
 
-Hooks.once('init', LaughTrack.init);
-Hooks.once('setup', LaughTrack.setup);
+Hooks.once("init", LaughTrack.init);
+Hooks.once("setup", LaughTrack.setup);
 
 Hooks.on("getSceneControlButtons", function(controls) {
     let tileControls = controls.find(x => x.name === "token");
