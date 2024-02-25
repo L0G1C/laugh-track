@@ -4,7 +4,13 @@
         "title": "Laugh Track",
         "laughtrack": "laughtrack",
         "default": "make this default sound?",
-        "send": "Send a laugh."
+        "send": "Send a laugh.",
+        "crowd": "Big Crowd", 
+        "cartoon": "Cartoon", 
+        "evil-dwarf": "Evil Dwarf", 
+        "human-female": "Human Female",
+        "human-male": "Human Male",
+        "hyena": "Hyena"
         },
         "settings": {
             "laughsoundvolume": {

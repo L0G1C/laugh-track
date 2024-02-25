@@ -5,7 +5,7 @@ export const registerSettings = function(){
 	let modulename = "laugh-track";
 
     game.settings.register(modulename, "defaultsound", {
-        scope: "world",
+        scope: "client",
         config: false,
         default: "crowd",
         type: String
@@ -14,7 +14,7 @@ export const registerSettings = function(){
     game.settings.register(modulename, "laughsoundvolume", {
         name: i18n("LAUGHTRACK.settings.laughsoundvolume.name"), // "Warning Sound Volume"
         hint: i18n("LAUGHTRACK.settings.laughsoundvolume.hint"), // "You can set the volume for the warning sound. Use 0.1 for 10% of the volume. 0.6 for 60% of the volume."
-        scope: 'world',
+        scope: 'client',
         config: true,
         default: 0.4,
         range: {

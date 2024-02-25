@@ -47,8 +47,7 @@ export class LaughTrack {
         LaughTrack[data.action].call(LaughTrack, data);
     }
 
-    static registerHotKeys() {
-        log("In register");
+    static registerHotKeys() {        
         game.keybindings.register(moduleName, 'playLaugh', {
             name: 'Play Laugh',
             hint: 'Plays the default laugh sound',
@@ -77,6 +76,7 @@ export class LaughTrack {
     }
 
     static async sendSound(data){
+        log("Playing Sound");
         this.playSound(data.sound);
     }
 }

@@ -14,19 +14,37 @@ export class LaughTrackApplication extends Application {
             });
     }
 
+    getData(){
+        let choices = {
+            crowd:  i18n("LAUGHTRACK.app.crowd"), 
+            cartoon: i18n("LAUGHTRACK.app.cartoon"), 
+            "evil-dwarf": i18n("LAUGHTRACK.app.evil-dwarf"), 
+            "human-female": i18n("LAUGHTRACK.app.human-female"),
+            "human-male": i18n("LAUGHTRACK.app.human-male"),
+            hyena: i18n("LAUGHTRACK.app.hyena")
+        };
+        let value = setting("defaultsound");
+
+        return mergeObject(super.getData(), {
+            choices: choices,
+            value: value
+        })
+    }
+
     activateListeners(html){  
         super.activateListeners(html);       
         html.find("#send-laugh-btn").click(function(){            
             let selectedLaugh = html.find("#laugh-select").val();    
-                    
+
             if (html.find("#defaultcb").is(":checked"))
                 game.settings.set("laugh-track","defaultsound", selectedLaugh);
 
             LaughTrack.emit("sendSound", {sound: selectedLaugh});
-        });         
+            this.close();
+        });               
     }
 
-    async close(options = {}) {
+    close(options = {}) {
         super.close(options);        
     }
 }

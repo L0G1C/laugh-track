@@ -6,19 +6,14 @@
         <div class="form-group">
             <div class="form-fields">
                 <select id="laugh-select">
-                    <option value="crowd" >Big Crowd</option>
-                    <option value="cartoon">Cartoon</option>
-                    <option value="evil-dwarf">Evil Dwarf</option>
-                    <option value="human-female">Human Female</option>
-                    <option value="human-male">Human Male</option>
-                    <option value="hyena">Hyena</option>
+                    {{ selectOptions choices selected=value localize=true }}
                 </select>
             </div>      
         </div>
         <div class="form-group">
             <div>
                 <input id="defaultcb" class="default" type="checkbox" name="default" value="Default" style="vertical-align: middle;" />
-                <label for="default" > Make this the default sound? </label>
+                <label for="default" > Update the default sound? </label>
             </div>
         </div>
         <hr />
