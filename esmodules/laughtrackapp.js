@@ -14,20 +14,17 @@ export class LaughTrackApplication extends Application {
             });
     }
 
-    // sendLaughToEveryone(laugh){
-    //     new Audio(`./sounds/${laugh}.mp3`).play();
-    // }
+    activateListeners(html){  
+        super.activateListeners(html);       
+        html.find("#send-laugh-btn").click(function(){            
+            let selectedLaugh = html.find("#laugh-select").val();    
+                    
+            if (html.find("#defaultcb").is(":checked"))
+                game.settings.set("laugh-track","defaultsound", selectedLaugh);
 
-    activeListeners(html){
-        super.activeListeners(html);
-        let selectedLaugh = this.element.find("#laugh-select").value;
-        //this.element.find("#send-laugh-btn").click(this.socket.executeForEveryone(this.sendLaughToEveryone, selectedLaugh));
+            LaughTrack.emit("sendSound", {sound: selectedLaugh});
+        });         
     }
-
-    // play(){
-    //     // Figure out default and send Laugh to Everyone
-    //     this.sendLaughToEveryone("cartoon");
-    // }
 
     async close(options = {}) {
         super.close(options);        

@@ -54,7 +54,8 @@ export class LaughTrack {
             hint: 'Plays the default laugh sound',
             editable: [{ key: "KeyL", modifiers: []}],
             onDown: () => {
-                LaughTrack.playSound("cartoon"); // TODO get from default setting
+                let soundName = setting("defaultsound");
+                LaughTrack.playSound(soundName); 
             },
             onUp: () => {},
             restricted: false,  // Restrict this Keybinding to gamemaster only?
@@ -63,11 +64,9 @@ export class LaughTrack {
           });
     }
 
-    static playSound(laugh){
-        log("Playing sound " + laugh);
-        let soundName = setting("defaultsound");
+    static playSound(laugh){        
         const soundVolume = setting("laughsoundvolume");
-        const mySound = `modules/laugh-track/sounds/${soundName}.mp3`;
+        const mySound = `modules/laugh-track/sounds/${laugh}.mp3`;
         AudioHelper.play({
             src: mySound,
             volume: soundVolume,
@@ -75,6 +74,10 @@ export class LaughTrack {
             loop: false
         }, true);
           
+    }
+
+    static async sendSound(data){
+        this.playSound(data.sound);
     }
 }
 

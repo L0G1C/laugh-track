@@ -1,19 +1,29 @@
-<form class="flexcol">
-    <p class="laugh-start flexrow">
-        <span style="line-height: 24px;">Choose a laugh to send.</span>                
-    </p>
-    <div class="form-group">
-        <div class="form-fields">
-            <select id="laugh-select" style="text-align: center;">
-                <option value="cartoon">Cartoon</option>
-            </select>
+<div class="dialog-content">
+    <form>
+        <p class="laugh-start">
+            <span style="line-height: 24px;">Choose a laugh to send.</span>                
+        </p>
+        <div class="form-group">
+            <div class="form-fields">
+                <select id="laugh-select">
+                    <option value="crowd" >Big Crowd</option>
+                    <option value="cartoon">Cartoon</option>
+                    <option value="evil-dwarf">Evil Dwarf</option>
+                    <option value="human-female">Human Female</option>
+                    <option value="human-male">Human Male</option>
+                    <option value="hyena">Hyena</option>
+                </select>
+            </div>      
         </div>
-        <div class="form-fields">
-            <input class="default" style="text-align: center;" type="checkbox" name="default" value="Default" />
-            <label for="default"> Make this the default sound? </label>
+        <div class="form-group">
+            <div>
+                <input id="defaultcb" class="default" type="checkbox" name="default" value="Default" style="vertical-align: middle;" />
+                <label for="default" > Make this the default sound? </label>
+            </div>
         </div>
-    </div>
-    <footer class="flexrow">
-        <button id="send-laugh-btn" type="button">LAUGH</button>
-    </footer>
-</form>
+        <hr />
+        <footer>
+            <button id="send-laugh-btn" type="button">LAUGH</button>
+        </footer>
+    </form>
+</div>
