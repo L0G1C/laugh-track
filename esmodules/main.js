@@ -1,4 +1,6 @@
 const moduleName = "laugh-track";
+let playingSound = false;
+
 import { registerSettings } from "./settings.js";
 import { LaughTrackApplication } from "./laughtrackapp.js"
 
@@ -52,12 +54,19 @@ export class LaughTrack {
             name: "Play Laugh",
             hint: "Plays the default laugh sound",
             editable: [{ key: "KeyL", modifiers: []}],
-            onDown: () => {
-                let soundName = setting("defaultsound");
-                LaughTrack.playSound(soundName); 
+            onDown: async () => {
+                // throttle hotkey presses with setTimeout
+                if (!playingSound){
+                    let soundName = setting("defaultsound");
+                    LaughTrack.playSound(soundName); 
+                    playingSound = true;
+                    await setTimeout(() => {
+                        playingSound = false;
+                    },3000);                    
+                }
             },
             onUp: () => {},
-            restricted: false,  // Restrict this Keybinding to gamemaster only?
+            restricted: false, 
             reservedModifiers: [],
             precedence: CONST.KEYBINDING_PRECEDENCE.NORMAL
           });
