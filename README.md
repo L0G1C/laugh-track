@@ -18,4 +18,5 @@ There are client configuration options for laugh volume and keybinding for the l
 
 ## Licenses
 Sounds: https://mixkit.co/license/#sfxFree
+
 FontAwesome: https://fontawesome.com/license
