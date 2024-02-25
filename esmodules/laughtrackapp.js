@@ -33,18 +33,18 @@ export class LaughTrackApplication extends Application {
 
     activateListeners(html){  
         super.activateListeners(html);       
-        html.find("#send-laugh-btn").click(function(){            
+        html.find("#send-laugh-btn").click(async () => {            
             let selectedLaugh = html.find("#laugh-select").val();    
 
             if (html.find("#defaultcb").is(":checked"))
                 game.settings.set("laugh-track","defaultsound", selectedLaugh);
 
             LaughTrack.emit("sendSound", {sound: selectedLaugh});
-            this.close();
+            await this.close();            
         });               
     }
 
-    close(options = {}) {
+    async close(options = {}) {
         super.close(options);        
     }
 }

@@ -76,7 +76,7 @@ export class LaughTrack {
     }
 
     static async sendSound(data){
-        log("Playing Sound");
+        log("Playing Sound"); // TODO - Why is this happening twice potentially?
         this.playSound(data.sound);
     }
 }
