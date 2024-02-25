@@ -12,6 +12,7 @@ Laugh track seeks to resolve this problem by giving players a new option under t
 ![Laugh Track Popup](https://cdn.discordapp.com/attachments/996243904552763513/1211314050429091870/popup.PNG?ex=65edbf1e&is=65db4a1e&hm=13d077c62f479b0e4a357a661d755a28a6165159208acc662fe0e79edcdfe622&)
 
 There are client configuration options for laugh volume and keybinding for the laugh hotkey!
+
 ![Laugh Track Config](https://cdn.discordapp.com/attachments/996243904552763513/1211314332940378172/options.PNG?ex=65edbf62&is=65db4a62&hm=c53d55cb3ec8c3386189531f7bb34c89876d4f1af2171ba6a70bfa181d0ad1c5&)
 
 
