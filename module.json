@@ -35,6 +35,6 @@
     ],
     "socket": true,
     "url": "https://github.com/L0G1C/laugh-track",
-    "manifest": "https://raw.githubusercontent.com/L0G1C/laugh-track/main/module.json",
-    "download": "https://github.com/L0G1C/laugh-track/archive/refs/heads/main.zip"
+    "manifest": "https://github.com/L0G1C/laugh-track/releases/download/v1.0.1/module.json",
+    "download": "https://github.com/L0G1C/laugh-track/releases/download/v1.0.1/laugh-track.zip"
   }
