@@ -21,7 +21,7 @@
         "./esmodules/main.js"
     ],
     "styles": ["styles/styles.css"],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "compatibility": {
       "minimum": "10",
       "verified": "11"
