@@ -7,13 +7,13 @@ Often times players have microphones muted or are using "push-to-talk", and when
 
 Laugh track seeks to resolve this problem by giving players a new option under the scene control options which allows the player to "send a laugh" to all other players at the table. There are a few options for style of laugh to send. And an option to set a new default sound which can be sent with a hotkey press of the "L" key on the keyboard.
 
-![Laugh Track icon](images/icon.PNG)
+![Laugh Track icon](https://raw.githubusercontent.com/L0G1C/laugh-track/main/images/icon.PNG)
 
-![Laugh Track Popup](images/popup.PNG)
+![Laugh Track Popup](https://raw.githubusercontent.com/L0G1C/laugh-track/main/images/popup.PNG)
 
 There are client configuration options for laugh volume and keybinding for the laugh hotkey!
 
-![Laugh Track Config](images/config.PNG)
+![Laugh Track Config](https://raw.githubusercontent.com/L0G1C/laugh-track/main/images/config.PNG)
 
 
 ## Licenses
