@@ -6,6 +6,16 @@ on:
             - main
 
 jobs:
+    debug:
+      name: Debug
+      runs-on: ubuntu-latest
+      steps:
+        - name: Dump env
+          run: env | sort
+        - name: Dump GitHub context
+          env:
+            GITHUB_CONTEXT: ${{ toJson(github) }}
+          run: echo "$GITHUB_CONTEXT"  
     build:
         runs-on: ubuntu-latest
         permissions: write-all
@@ -29,7 +39,7 @@ jobs:
                 name: Release ${{ steps.get-version.outputs.version }}
                 draft: false
                 prerelease: false
-                token: ${{ secrets.GITHUB_TOKEN }}
+                token: ${{ secrets.GITHUB_TOKEN }} 
                 artifacts: './module.zip, ./module.json'
                 tag: v${{ steps.get-version.outputs.version }}
 
