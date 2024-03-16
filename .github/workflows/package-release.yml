@@ -2,7 +2,7 @@ name: Foundry Package Release
 
 on: 
     release:
-        types: [published]
+        types: [released]
 
 jobs:
     main:
