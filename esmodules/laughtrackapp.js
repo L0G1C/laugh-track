@@ -19,10 +19,10 @@ export class LaughTrackApplication extends Application {
             crowd:  i18n("LAUGHTRACK.app.crowd"), 
             cartoon: i18n("LAUGHTRACK.app.cartoon"), 
             "evil-dwarf": i18n("LAUGHTRACK.app.evil-dwarf"), 
+            ghost: i18n("LAUGHTRACK.app.ghost"),
             "human-female": i18n("LAUGHTRACK.app.human-female"),
             "human-male": i18n("LAUGHTRACK.app.human-male"),
-            hyena: i18n("LAUGHTRACK.app.hyena"),
-            ghost: i18n("LAUGHTRACK.app.ghost")
+            hyena: i18n("LAUGHTRACK.app.hyena")
         };
         let value = setting("defaultsound");
 

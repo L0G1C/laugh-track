@@ -8,10 +8,10 @@
         "crowd": "Big Crowd", 
         "cartoon": "Cartoon", 
         "evil-dwarf": "Evil Dwarf", 
+        "ghost": "Evil Female Ghost",
         "human-female": "Human Female",
         "human-male": "Human Male",
-        "hyena": "Hyena",
-        "ghost": "Female Ghost"
+        "hyena": "Hyena"
         },
         "settings": {
             "laughsoundvolume": {
