@@ -72,7 +72,8 @@ export class LaughTrack {
           });
     }
 
-    static playSound(laugh){        
+    static playSound(laugh){   
+        log("Playing Sound: " + laugh);      
         const soundVolume = setting("laughsoundvolume");
         const mySound = `modules/laugh-track/sounds/${laugh}.mp3`;
         AudioHelper.play({
@@ -84,8 +85,7 @@ export class LaughTrack {
           
     }
 
-    static async sendSound(data){
-        log("Playing Sound: " + data.sound); 
+    static async sendSound(data){        
         this.playSound(data.sound);
     }
 }
