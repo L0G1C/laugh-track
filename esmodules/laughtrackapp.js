@@ -21,7 +21,8 @@ export class LaughTrackApplication extends Application {
             "evil-dwarf": i18n("LAUGHTRACK.app.evil-dwarf"), 
             "human-female": i18n("LAUGHTRACK.app.human-female"),
             "human-male": i18n("LAUGHTRACK.app.human-male"),
-            hyena: i18n("LAUGHTRACK.app.hyena")
+            hyena: i18n("LAUGHTRACK.app.hyena"),
+            ghost: i18n("LAUGHTRACK.app.ghost")
         };
         let value = setting("defaultsound");
 
@@ -40,6 +41,7 @@ export class LaughTrackApplication extends Application {
                 game.settings.set("laugh-track","defaultsound", selectedLaugh);
 
             LaughTrack.emit("sendSound", {sound: selectedLaugh});
+            LaughTrack.playSound(selectedLaugh);
             await this.close();            
         });               
     }

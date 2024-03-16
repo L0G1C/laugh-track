@@ -46,7 +46,8 @@ export class LaughTrack {
     }
 
     static onMessage(data) {
-        LaughTrack[data.action].call(LaughTrack, data);
+        if (data.senderId != game.user.id)
+            LaughTrack[data.action].call(LaughTrack, data);
     }
 
     static registerHotKeys() {        

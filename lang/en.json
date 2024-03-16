@@ -10,7 +10,8 @@
         "evil-dwarf": "Evil Dwarf", 
         "human-female": "Human Female",
         "human-male": "Human Male",
-        "hyena": "Hyena"
+        "hyena": "Hyena",
+        "ghost": "Female Ghost"
         },
         "settings": {
             "laughsoundvolume": {
