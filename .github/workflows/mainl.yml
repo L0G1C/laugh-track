@@ -24,7 +24,7 @@ jobs:
 
             - name: Zip Files
               working-directory: ./
-              run: zip -r ./module.zip ./*
+              run: zip -r ./laugh-track.zip ./*
 
             - name: Get Version
               shell: bash
@@ -40,7 +40,7 @@ jobs:
                 draft: false
                 prerelease: false
                 token: ${{ secrets.GITHUB_TOKEN }} 
-                artifacts: './module.zip, ./module.json'
+                artifacts: './laugh-track.zip, ./module.json'
                 tag: ${{ steps.get-version.outputs.version }}
 
             - name: Publish Module to FoundryVTT Website
