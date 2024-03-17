@@ -21,7 +21,7 @@
         "./esmodules/main.js"
     ],
     "styles": ["styles/styles.css"],
-    "version": "1.0.5",
+    "version": "1.0.6",
     "compatibility": {
       "minimum": "10",
       "verified": "11"
@@ -36,5 +36,5 @@
     "socket": true,
     "url": "https://github.com/L0G1C/laugh-track",
     "manifest": "https://github.com/L0G1C/laugh-track/releases/latest/download/module.json",
-    "download": "https://github.com/L0G1C/laugh-track/releases/download/v1.0.5/laugh-track.zip"
+    "download": "https://github.com/L0G1C/laugh-track/releases/download/v1.0.6/laugh-track.zip"
   }
